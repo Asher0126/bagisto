@@ -34,4 +34,30 @@ return [
         'jenssegers' => \Shetabit\Visitor\Drivers\JenssegersAgent::class,
         'UAParser' => \Shetabit\Visitor\Drivers\UAParser::class,
     ],
+    /*
+    |--------------------------------------------------------------------------
+    | Default Resolver
+    |--------------------------------------------------------------------------
+    |
+    | This value determines which of the following resolver to use.
+    | You can switch to a different resolver at runtime.
+    |
+    */
+    'resolver' => 'ip-api',
+
+    /*
+    |--------------------------------------------------------------------------
+    | List of Resolvers
+    |--------------------------------------------------------------------------
+    |
+    | This is the array of Classes that maps to Resolvers above.
+    | You can create your own resolver if you like and add the
+    | config in the resolvers array and the class to use for
+    | here with the same name. You will have to implement
+    | Shetabit\Visitor\Contracts\GeoIpResolver in your resolver.
+    |
+    */
+    'resolvers' => [
+        'ip-api' => \Shetabit\Visitor\Resolvers\IpApi::class,
+    ],
 ];
