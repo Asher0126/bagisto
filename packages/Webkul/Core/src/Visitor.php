@@ -4,6 +4,7 @@ namespace Webkul\Core;
 
 use Illuminate\Database\Eloquent\Model;
 use Shetabit\Visitor\Visitor as BaseVisitor;
+use Shetabit\Visitor\Exceptions\ResolverNotFoundException;
 use Webkul\Core\Jobs\UpdateCreateVisitIndex;
 
 class Visitor extends BaseVisitor
