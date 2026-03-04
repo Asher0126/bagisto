@@ -4,6 +4,7 @@ namespace Webkul\Core\Providers;
 
 use Illuminate\Http\Request;
 use Shetabit\Visitor\Provider\VisitorServiceProvider as BaseVisitorServiceProvider;
+use Shetabit\Visitor\Exceptions\ResolverNotFoundException;
 use Webkul\Core\Visitor;
 
 /**
